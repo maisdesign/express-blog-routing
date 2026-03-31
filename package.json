@@ -1,0 +1,29 @@
+{
+  "name": "express-blog-routing",
+  "version": "1.0.0",
+  "description": "Creare un file di routing `routers/posts.js` che conterrà le rotte necessarie per l'entità post. All'interno creare le rotte per le operazioni CRUD (Index, Show, Create, Update e Delete). Tutte le risposte saranno dei testi che confermeranno l'operazione che il server deve eseguire, secondo le convenzioni REST. Ad esempio: - `GET /posts` → 'Lista dei post'   - `DELETE /posts/1` → 'Cancellazione del post 1'. Registrare il router dentro `app.js` con il prefisso `posts/`. Bonus - Restituire la lista dei post dalla rotta index in formato JSON - Restituire un singolo post dalla rotta show in formato JSON",
+  "keywords": [
+    "express",
+    "blog"
+  ],
+  "homepage": "https://github.com/maisdesign/express-blog-routing#readme",
+  "bugs": {
+    "url": "https://github.com/maisdesign/express-blog-routing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maisdesign/express-blog-routing.git"
+  },
+  "license": "ISC",
+  "author": "Marco Cardia",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "watch": "node --watch app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "serve-static": "^2.2.1"
+  }
+}
