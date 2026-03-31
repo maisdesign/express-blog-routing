@@ -3,11 +3,11 @@ const router = express.Router();
 const postsData = require('../data/posts-data.js')
 // index
 router.get('/', function (req, res) {
-    res.send('Lista dei posts');
+    res.json(postsData);
 });
 // show
 router.get('/:id', function (req, res) {
-    res.send('Dettagli del post ' + req.params.id);
+    res.json(postsData.find((posty) => posty.id === parseInt(req.params.id)));
 });
 // store
 router.post('/', function (req, res) {
